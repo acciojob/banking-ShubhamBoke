@@ -45,7 +45,6 @@ public class CurrentAccount extends BankAccount{
         for(int i=0; i<n; i++){
             map.put(id.charAt(i), map.getOrDefault(id.charAt(i), 0)+1);
         }
-        System.out.println(map);
         char last = '!';
         StringBuilder sb = new StringBuilder();
         while(true){
@@ -64,6 +63,14 @@ public class CurrentAccount extends BankAccount{
                 }
             }
         }
+    }
+
+    public String getTradeLicenseId() {
+        return tradeLicenseId;
+    }
+
+    public void setTradeLicenseId(String tradeLicenseId) {
+        this.tradeLicenseId = tradeLicenseId;
     }
 }
 
