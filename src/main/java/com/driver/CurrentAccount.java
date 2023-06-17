@@ -67,11 +67,3 @@ public class CurrentAccount extends BankAccount{
     }
 }
 
-class Pair{
-    char ch;
-    int fr;
-    Pair(char ch, int fr){
-        this.ch = ch;
-        this.fr = fr;
-    }
-}
